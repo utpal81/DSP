@@ -1,3 +1,4 @@
+
 % Program to generate a sine wave
 clear;
 close all;
