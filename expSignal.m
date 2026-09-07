@@ -1,4 +1,4 @@
-% program for exponential function
+    % program for exponential function
 clc
 clear
 close all

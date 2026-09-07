@@ -21,10 +21,10 @@ title ('Original sequence');
 grid on;
 
 if(c==1)
-    t=[left-s:right-s];
+    t=left-s:right-s;
 end
 if(c==2)
-    t=[left+s:right+s];
+    t=left+s:right+s;
 end
 subplot (1,2,2);
 stem (t,x);
