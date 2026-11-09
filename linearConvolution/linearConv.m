@@ -13,12 +13,12 @@ lenh = length(h);
 hf = fliplr(h);
 
 %% Zero padding
-hf = [hf zeros(1,lenx-1)];
+hfpad = [hf zeros(1,lenx-1)];
 xpad = [zeros(1,lenh-1) x];
 
 %% Linear convolution Logic for each sample of y
 for i = 1:lenx+lenh-1
-    hf_shift = rshift(hf,i-1);    % shift hf 
+    hf_shift = rshift(hfpad,i-1);    % shift hf 
     v=xpad .* hf_shift;           % multiply shifted hf and xpad
     y(i) = sum(v);                % sum all samples of v
 end

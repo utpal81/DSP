@@ -40,4 +40,4 @@ disp('Circulant Matrix:')
 disp(S)
 
 disp('Circular Convolution:')
-disp(res)
+disp(res)         
